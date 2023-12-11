@@ -1,0 +1,78 @@
+@import './src/vars.less';
+@import './src/header.less';
+@import './src/intro.less';
+@import './src/foryou.less';
+@import './src/footer.less';
+@import './src/cards.less';
+@import './src/steps.less';
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--day-base-base-02);
+  color: var(--day-text-text-01);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  
+}
+
+h1{
+  color: var(--day-text-text-01);
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; 
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2{
+  color: var(--day-text-text-01);
+  font-feature-settings: 'liga' off;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  padding: 76px 128px 24px 128px;
+  gap: 48px;
+}
+
+.cards{
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.card{
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--day-base-base-01, #FFF);
+}
+
