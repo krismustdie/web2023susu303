@@ -1,0 +1,28 @@
+.posts-list{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.post-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px -10px var(--accent-color);
+    gap: 10px;
+    transition: all .6s;
+    justify-content: space-between;  
+}
+
+.post-card:hover{
+    box-shadow: 0 0 30px 0 var(--accent-color);
+}
+
+.postFooter{
+    display: flex;
+    justify-content: space-between;
+}
