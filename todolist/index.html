@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Dela+Gothic+One&family=Martian+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>NOTES</h1>
+        <div>
+            <h2>ВАЖНЫЕ</h1>
+            <div class="posts-list" id="important-posts">
+            <!-- Здесь будут отображаться важные посты -->
+            </div>
+        </div>
+        <div>
+            <h2>ПРОЧИЕ</h1>
+             <div class="posts-list" id="all-posts">
+            <!-- Здесь будут отображаться посты -->
+            </div>
+        </div>
+        <!-- Лоадер -->
+        <div id="loader" class="loader"></div>
+    </div>
+            
+    <div class="sticky-bottom-block">
+        <button class="fixed_button" id="newPostButton">
+            <img src="icons\plusDay.svg" alt="plusIcon" class="iconButton" id="dayIcon">
+            <img src="icons\plusNight.svg" alt="plusIcon" class="iconButton" id="nightIcon">
+        </button>
+        <button class="fixed_button" id="toggleThemeButton">
+            <img src="icons\moon.svg" alt="dayTheme" class="iconButton" id="dayIcon">
+            <img src="icons\sun.svg" alt="dayTheme" class="iconButton" id="nightIcon">
+        </button>
+    </div>
+    
+    <!-- Модальное окно для создания/редактирования поста -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span  id="closePostModal" class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <form id="postForm">
+                <!-- Форма для создания/редактирования поста -->
+                <label for="userNameSelect">Имя пользователя:</label>
+                <select id="userNameSelect"></select><br><br>
+                <label for="postTitle">Тема:</label>
+                <input type="text" id="postTitle" name="postTitle" required><br><br>
+    
+                <label for="postContent">Информация:</label>
+                <textarea id="postContent" name="postContent" rows="4" required></textarea><br><br>
+    
+                <button id="savePostBtn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения удаления -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <span id="closeConfirmModal" class="close">&times;</span>
+            <h2>Подтвердите удаление</h2>
+            <p>Вы уверены, что хотите удалить этот пост?</p>
+            <div class="confirm-buttons">
+                <button id="confirmDeleteBtn">Да</button>
+                <button id="cancelDeleteBtn">Нет</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

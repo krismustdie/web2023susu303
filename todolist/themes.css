@@ -1,0 +1,16 @@
+:root {
+    --bg-color: #D7D6D6; 
+    --text-color: #181818;
+    --accent-color: #917CA2;
+    --day-icon-visibility: block;
+    --night-icon-visibility: none;
+    --logo-gradient: ;
+}
+
+.dark-theme {
+    --bg-color: #181818;
+    --text-color: #D7D6D6;
+    --accent-color: #3dff2f;
+    --day-icon-visibility: none;
+    --night-icon-visibility: block;
+}
