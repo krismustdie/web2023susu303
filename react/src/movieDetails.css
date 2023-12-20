@@ -1,0 +1,113 @@
+.movieDetails {
+    width: 1237px;
+    height: 891px;
+    flex-shrink: 0;
+    background: #FAFAFA;
+}
+
+.movieDetailsHeader {
+    display: flex;
+    width: 1237px;
+    height: 19px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 17px;
+}
+
+.edit {
+    display: flex;
+    width: 161px;
+    height: 32px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit:hover {
+    border-radius: 8px;
+    background: rgba(66, 139, 249, 0.20);
+    color: #336FEE;
+    cursor: pointer;
+}
+
+.editText:hover {
+    cursor: pointer;
+}
+
+.movieDetailsWrapper {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.poster {
+    width: 200px;
+    height: 297px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.detailsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 937px;
+}
+
+.parameters {
+    height: auto;
+    flex-shrink: 0;
+}
+
+.parameter {
+    height: 48px;
+    padding-top: 16px;
+}
+
+.parameterNameStyle {
+    width: 158px;
+    color: #6C6C6C;
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.actor {
+    padding-top: 10px;
+}
+
+.description {
+    margin-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+}
+
+.directorStyle {
+    color: #6C6C6C;
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 6px;
+}
+
+.titleStyle {
+    color: #000;
+    /* font-family: Inter; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 6px;
+}
+
+.copyButton:hover {
+    cursor: pointer;
+}
